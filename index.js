@@ -7,10 +7,11 @@ module.exports = (dir, cb) => {
     cb = dir
     dir = '.'
   }
-	cp.exec(cmd, { cwd: dir }, (err, stdout, stderr) => {
-		if (err) return cb(err)
-		cb(null, stdout.trim())
-	})
+  cp.exec(cmd, { cwd: dir }, (err, stdout, stderr) => {
+    if (err) return cb(err)
+    cb(null, stdout.trim())
+  })
 }
 
-module.exports.sync = dir => cp.execSync(cmd, { cwd: dir }).trim()
+module.exports.sync = dir =>
+  cp.execSync(cmd, { cwd: dir, encoding: 'utf8' }).trim()

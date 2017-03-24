@@ -3,5 +3,11 @@
   "version": "0.0.0",
   "license": "MIT",
   "repository": "juliangruber/git-current-commit",
-  "description": "Get the current local git commit"
+  "description": "Get the current local git commit",
+  "devDependencies": {
+    "prettier-standard-formatter": "^0.222222222222222.333333333333333"
+  },
+  "scripts": {
+    "test": "prettier-standard-formatter *.js"
+  }
 }
