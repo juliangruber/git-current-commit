@@ -1,6 +1,8 @@
 
 # git-current-commit
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/juliangruber/git-current-commit.svg)](https://greenkeeper.io/)
+
 Get the current local git commit.
 
 ## Usage
