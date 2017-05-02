@@ -1,6 +1,6 @@
 {
   "name": "git-current-commit",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "license": "MIT",
   "repository": "juliangruber/git-current-commit",
   "description": "Get the current local git commit",
