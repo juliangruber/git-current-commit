@@ -14,6 +14,7 @@ getCommit(function (err, commit) {
 })
 
 getCommit.sync() // => '21ed11701a068b88b3890578a1c8a420972927a4'
+getCommit.promise() // => '21ed11701a068b88b3890578a1c8a420972927a4'
 ```
 
 ## Installation
@@ -27,6 +28,8 @@ $ npm install git-current-commit
 ### getCommit([dir], cb)
 
 ### getCommit.sync([dir])
+
+### getCommit.promise([dir])
 
 ## License
 

@@ -5,3 +5,5 @@ getCommit(function (err, commit) {
   console.log(`commit: ${commit}`)
   console.log(`commit: ${getCommit.sync()} (sync)`)
 })
+
+getCommit.promise().then(commit => console.log(`commit: ${commit} (promise)`))
